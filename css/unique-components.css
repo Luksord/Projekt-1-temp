@@ -104,6 +104,16 @@
   padding-left: 0;
   gap: 20px;
 }
+@media screen and (min-width: 768px) {
+  .unique-components-list {
+    gap: 32px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .unique-components-list {
+    gap: 19px;
+  }
+}
 
 .unique-components-item {
 }
@@ -264,6 +274,6 @@
     white-space: nowrap;
     text-overflow: ellipsis;
     width: 230px;
-    height: 162px;
+    height: 160px;
   }
 }
