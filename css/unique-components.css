@@ -100,16 +100,15 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
   margin: 0;
   padding-left: 0;
   gap: 20px;
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .unique-components-list {
+    /* width: calc(100vw + 15px); */
     gap: 32px;
-    width: calc(100vw + 15px);
-    flex-direction: column;
-    max-height: 572px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -186,6 +185,17 @@
 @media screen and (min-width: 1200px) {
   .flip-card-front > img {
     margin-left: 28px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .img-desktop {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .img-mobile {
+    display: none;
   }
 }
 
