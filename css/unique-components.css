@@ -104,9 +104,12 @@
   padding-left: 0;
   gap: 20px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .unique-components-list {
     gap: 32px;
+    width: calc(100vw + 15px);
+    flex-direction: column;
+    max-height: 572px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -116,6 +119,10 @@
 }
 
 .unique-components-item {
+}
+@media screen and (min-width: 768px) {
+  .unique-components-item {
+  }
 }
 
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
@@ -274,6 +281,6 @@
     white-space: nowrap;
     text-overflow: ellipsis;
     width: 230px;
-    height: 160px;
+    height: 140px;
   }
 }
