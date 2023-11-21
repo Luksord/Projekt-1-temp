@@ -40,7 +40,7 @@
   }
 }
 
-.flex-box {
+.components-flex-box {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -48,7 +48,7 @@
   min-width: 335px;
 }
 
-.secondary-title {
+.components-secondary-title {
   color: #111;
   /* font-family: Montserrat; */
   font-size: 20px;
@@ -62,7 +62,7 @@
   max-width: 283px;
 }
 @media screen and (min-width: 768px) {
-  .secondary-title {
+  .components-secondary-title {
     font-size: 24px;
     line-height: 28px; /* 116.667% */
     letter-spacing: -0.72px;
@@ -75,7 +75,7 @@
   color: #fd9222;
 }
 
-.paragraph {
+.components-paragraph {
   color: #111;
   /* font-family: Montserrat; */
   font-size: 14px;
@@ -89,7 +89,7 @@
   width: 300px;
 }
 @media screen and (min-width: 768px) {
-  .paragraph {
+  .components-paragraph {
     margin-bottom: 50px;
     width: 450px;
   }
@@ -109,6 +109,21 @@
   .unique-components-list {
     /* width: calc(100vw + 15px); */
     gap: 32px;
+  }
+  /* Chocolate */
+  .unique-components-item:nth-child(1) {
+    order: 0;
+  }
+  /* Milk */
+  .unique-components-item:nth-child(2) {
+    order: 1;
+  }
+  /* Nuts */
+  .unique-components-item:nth-child(3) {
+    order: 2;
+  }
+  /* Raisins */
+  .unique-components-item:nth-child(4) {
   }
 }
 @media screen and (min-width: 1200px) {
